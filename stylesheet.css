@@ -177,3 +177,19 @@ h2 {
 .slides button:hover {
   text-decoration: underline;
 }
+
+.footer {
+  background-color: black;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer h6 {
+  font-size: 20px;
+  font-family: monofontoCustom;
+}
+
+.footer a {
+  font-size: 20px;
+}
