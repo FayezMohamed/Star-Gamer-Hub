@@ -1,0 +1,99 @@
+body {
+  background-image: url("white sky.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+}
+
+@font-face {
+font-family: 'ashCustom';
+src: url('ash.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'impactCustom';
+src: url('impact.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.logo {
+  font-size: 100px;
+  font-family: "ashCustom";
+  margin-bottom: -90px;
+  margin-left: 30px;
+}
+
+#start {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0;
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("start.png");
+  margin-left: 130px;
+  transition: background-image 0.1s ease-in-out;
+}
+
+#start:hover {
+  background-image: url("start2.png");
+}
+
+.latest {
+  background-color: black;
+}
+
+.latest p{
+  color: white;
+  font-size: 30px;
+  font-family: "impactCustom";
+  margin-left: 30px;
+}
+
+.articles {
+    position: relative;
+    display: inline-block;
+}
+
+.articles img {
+  margin: 30px;
+  width: 100%;
+  height: auto;
+  border: solid 3px black;
+  cursor: pointer;
+}
+
+.articles p{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "impactCustom";
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background to the text */
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  cursor: pointer;
+}
+
+.articles:hover img {
+  opacity: 0.95;
+}
+
+.articles:hover p {
+    text-decoration: underline; /* Add underline to text on hover */
+}

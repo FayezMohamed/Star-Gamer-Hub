@@ -1,0 +1,195 @@
+body {
+  color: white;
+  background-image: url("night.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.logo {
+  width: 12%;
+  height: auto;
+}
+.container {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-bottom: 0;
+  background-color: rgb(114, 114, 115);
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+font-family: 'ashCustom';
+src: url('ash.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.logo {
+  font-family: ashCustom;
+  color: black;
+  text-shadow: 2px 2px 5px white;
+}
+
+@font-face {
+font-family: 'typewriterCustom';
+src: url('typewriter.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.buttons {
+  display: flex;
+
+}
+.buttons button {
+cursor: pointer;
+padding: 10px 15px;
+font-size: 30px;
+font-weight: bold;
+border: none;
+background-color: rgb(114, 114, 115);
+color: black;
+font-family: 'typewriterCustom', sans-serif;
+}
+.buttons button:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+font-family: 'ImpactCustom';
+src: url('impact.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+h1 {
+  margin-top: 130px;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'ImpactCustom', sans-serif;
+  letter-spacing: 2px;
+}
+
+@font-face {
+font-family: 'monofontoCustom';
+src: url('monofonto.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+p {
+font-family: 'monofontoCustom', sans-serif;
+font-size: 25px;
+text-shadow: 2px 2px 5px red;
+}
+
+a {
+  font-family: 'monofontoCustom', sans-serif;
+  font-size: 25px;
+}
+
+h4 {
+  font-family: 'monofontoCustom', sans-serif;
+  text-shadow: 2px 2px 5px blue;
+  margin-top: 150px;
+  font-size: 30px;
+}
+
+.text {
+  margin-top: 50px;
+}
+
+h3 {
+  font-family: 'ImpactCustom', sans-serif;
+  font-size: 40px;
+  margin-top: 200px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-container img {
+  margin-right: 30px;
+  width: 50%;
+}
+
+.img-container2 img {
+  width: 70%;
+}
+
+.img-container3 img {
+  width: 40%;
+}
+
+.img-container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 130px;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'ImpactCustom', sans-serif;
+  letter-spacing: 2px;
+}
+
+.slides {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.slides button {
+  font-size: 30px;
+  margin-right: 10px;
+  font-family: 'monofontoCustom', sans-serif;
+  text-shadow: 2px 2px 5px green;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.slides button a:visited{
+  color: white;
+}
+
+.slides button a:active{
+  color: black;
+}
+
+.highlighted:link {
+  color: green;
+}
+
+.slides button .highlighted:visited {
+  color: green;
+}
+
+.slides button:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: black;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer h6 {
+  font-size: 20px;
+  font-family: monofontoCustom;
+}
+
+.footer a {
+  font-size: 20px;
+}
