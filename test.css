@@ -63,37 +63,34 @@ font-style: normal;
 }
 
 .articles {
-    position: relative;
-    display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.articles img {
+.article {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
   margin: 30px;
-  width: 100%;
-  height: auto;
-  border: solid 3px black;
-  cursor: pointer;
+  position: relative;
+  border: solid 2px black;
 }
 
-.articles p{
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.article p {
   font-family: "impactCustom";
   font-size: 30px;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a semi-transparent background to the text */
-  padding: 10px;
-  border-radius: 5px;
-  width: 80%;
+  color: white;
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.articles p:hover {
+  text-decoration: underline;
   cursor: pointer;
-}
-
-.articles:hover img {
-  opacity: 0.95;
-}
-
-.articles:hover p {
-    text-decoration: underline; /* Add underline to text on hover */
 }

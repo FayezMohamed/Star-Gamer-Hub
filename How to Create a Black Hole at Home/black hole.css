@@ -1,0 +1,83 @@
+@font-face {
+font-family: 'ashCustom';
+src: url('ash.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'ImpactCustom';
+src: url('impact.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'monofontoCustom';
+src: url('monofonto.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  font-family: "ashCustom";
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.logo img {
+  width: 20%;
+}
+
+h2 {
+  font-family: "ImpactCustom";
+  font-size: 80px;
+  text-align: center;
+  margin-top: 250px;
+}
+
+.imgContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.imgContainer img {
+  text-align: center;
+  width: 50%;
+}
+
+h5 {
+  font-family: "monofontoCustom";
+  font-size: 30px;
+}
+
+h4 {
+  font-family: "ImpactCustom";
+  font-size: 40px;
+}
+
+p {
+  font-family: "monofontoCustom";
+  font-size: 25px;
+  text-shadow: 2px 2px 5px rgb(69, 67, 67);
+}
+
+.other_articles {
+  background-color: black;
+}
+
+.other_articles p {
+  color: white;
+  font-family: "ImpactCustom";
+  font-size: 30px;
+  text-shadow: none;
+  margin-left: 20px; 
+}
