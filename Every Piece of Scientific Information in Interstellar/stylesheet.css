@@ -1,7 +1,6 @@
 body {
   color: white;
-  /*background-image: url("night.jpeg");*/
-  background-color: black;
+  background-image: url("night.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
