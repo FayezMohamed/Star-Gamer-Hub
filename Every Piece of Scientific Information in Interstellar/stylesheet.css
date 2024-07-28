@@ -1,6 +1,7 @@
 body {
   color: white;
-  background-image: url("night.jpeg");
+  /*background-image: url("night.jpeg");*/
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,7 +14,6 @@ body {
   display: flex;
   border-bottom: 1px solid black;
   padding-bottom: 0;
-  background-color: rgb(114, 114, 115);
   justify-content: center;
   align-items: center;
 }
@@ -27,8 +27,9 @@ font-style: normal;
 
 .logo {
   font-family: ashCustom;
-  color: black;
-  text-shadow: 2px 2px 5px white;
+  color: white;
+  font-size: 80px;
+  margin-right: 230px;
 }
 
 @font-face {
@@ -192,4 +193,49 @@ h2 {
 
 .footer a {
   font-size: 20px;
+}
+
+.other_articles {
+  background-color: white;
+}
+
+.other_articles p {
+  color: black;
+  font-family: "ImpactCustom";
+  font-size: 30px;
+  text-shadow: none;
+  margin-left: 20px;
+}
+
+.articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  margin: 30px;
+  position: relative;
+  border: solid 2px black;
+}
+
+.article p {
+  font-family: "impactCustom";
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.articles p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
