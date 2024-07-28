@@ -5,10 +5,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.logo {
-  width: 12%;
-  height: auto;
-}
+
 .container {
   display: flex;
   border-bottom: 1px solid black;
@@ -32,7 +29,6 @@ font-style: normal;
   font-family: ashCustom;
   color: white;
   font-size: 30px;
-  margin-right: 230px;
 }
 
 @font-face {
