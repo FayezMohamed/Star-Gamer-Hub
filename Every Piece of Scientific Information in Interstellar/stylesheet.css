@@ -29,6 +29,8 @@ font-style: normal;
   font-family: ashCustom;
   color: white;
   font-size: 30px;
+  width: 100px;
+  margin-right: 40px;
 }
 
 @font-face {
