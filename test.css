@@ -1,3 +1,4 @@
+/* General styles */
 body {
   background-image: url("white sky.png");
   background-size: cover;
@@ -5,31 +6,39 @@ body {
   background-attachment: fixed;
 }
 
+/* Font Faces */
+@font-face {
+  font-family: 'ashCustom';
+  src: url('ash.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'impactCustom';
+  src: url('impact.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Container */
 .container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
 }
 
-@font-face {
-font-family: 'ashCustom';
-src: url('ash.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-
-@font-face {
-font-family: 'impactCustom';
-src: url('impact.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-
+/* Logo styles */
 .logo {
   font-size: 100px;
   font-family: "ashCustom";
   margin-bottom: -90px;
   margin-left: 30px;
+  text-align: center;
 }
 
+/* Button styles */
 #start {
   cursor: pointer;
   border: none;
@@ -43,7 +52,7 @@ font-style: normal;
   background-size: cover;
   background-position: center;
   background-image: url("start.png");
-  margin-left: 130px;
+  margin: 30px;
   transition: background-image 0.1s ease-in-out;
 }
 
@@ -51,23 +60,30 @@ font-style: normal;
   background-image: url("start2.png");
 }
 
+/* Latest articles */
 .latest {
   background-color: black;
+  width: 100%;
 }
 
-.latest p{
+.latest p {
   color: white;
   font-size: 30px;
   font-family: "impactCustom";
   margin-left: 30px;
+  text-align: center;
 }
 
+/* Articles container */
 .articles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
+/* Individual article */
 .article {
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,7 +99,8 @@ font-style: normal;
   font-size: 30px;
   color: white;
   position: absolute;
-  top: 150px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 10px;
   margin-left: 20px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -93,4 +110,39 @@ font-style: normal;
 .articles p:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 60px;
+    margin-left: 0;
+  }
+
+  #start {
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+  }
+
+  .latest p {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .articles {
+    flex-direction: column;
+  }
+
+  .article {
+    width: 90%;
+    height: 200px;
+    margin: 20px 0;
+  }
+
+  .article p {
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
